@@ -15,6 +15,8 @@ Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/C/CF/CFAERBER/%{pdir}-%{pnam}-%{version}.tar.gz
 URL:		http://search.cpan.org/dist/Color-Calc/
 BuildRequires:	perl-Graphics-ColorNames
+BuildRequires:	perl-Graphics-ColorNames-WWW
+BuildRequires:	perl-Graphics-ColorObject
 BuildRequires:	perl-Params-Validate
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -48,4 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Color/*.pm
+%dir %{perl_vendorlib}/Color/Calc
+%{perl_vendorlib}/Color/Calc/*.pm
 %{_mandir}/man3/*
