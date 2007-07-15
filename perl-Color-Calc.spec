@@ -1,18 +1,20 @@
 #
 # Conditional build:
-%bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Color
 %define		pnam	Calc
 Summary:	Simple calculations with RGB colors
+Summary(pl.UTF-8):	Proste obliczenia na kolorach RGB
 Name:		perl-Color-Calc
 Version:	1.04
 Release:	1
-License:	same as perl
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/C/CF/CFAERBER/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Color/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	9a474f4600fb0381461fbd6b20ca0e1c
 URL:		http://search.cpan.org/dist/Color-Calc/
 BuildRequires:	perl-Graphics-ColorNames
 BuildRequires:	perl-Graphics-ColorNames-WWW
@@ -24,7 +26,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Simple calculations with RGB colors
+Simple calculations with RGB colors.
+
+%description -l pl.UTF-8
+Proste obliczenia na kolorach RGB.
 
 %prep
 %setup -q %{version}q -n %{pdir}-%{pnam}-%{version}
