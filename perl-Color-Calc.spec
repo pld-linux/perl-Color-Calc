@@ -9,7 +9,7 @@ Summary:	Simple calculations with RGB colors
 Summary(pl.UTF-8):	Proste obliczenia na kolorach RGB
 Name:		perl-Color-Calc
 Version:	1.04
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -54,6 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/Color
 %{perl_vendorlib}/Color/*.pm
 %dir %{perl_vendorlib}/Color/Calc
 %{perl_vendorlib}/Color/Calc/*.pm
