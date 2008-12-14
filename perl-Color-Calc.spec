@@ -8,13 +8,13 @@
 Summary:	Simple calculations with RGB colors
 Summary(pl.UTF-8):	Proste obliczenia na kolorach RGB
 Name:		perl-Color-Calc
-Version:	1.04
-Release:	2
+Version:	1.05
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Color/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9a474f4600fb0381461fbd6b20ca0e1c
+# Source0-md5:	615e24e1183f1335b70d63c19b499677
 URL:		http://search.cpan.org/dist/Color-Calc/
 BuildRequires:	perl-Graphics-ColorNames
 BuildRequires:	perl-Graphics-ColorNames-WWW
